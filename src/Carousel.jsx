@@ -8,39 +8,58 @@ function SimpleSlider() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-  };
-  const image1 = {
-    backgroundImage: "url('carou-1.webp')",
-  };
-
-  const image2 = {
-    backgroundImage: "url('carou2.webp')",
+    autoplaySpeed: 1200,
+    speed: 1000,
   };
 
   return (
     <>
       <div className="carousel-home">
         <Slider {...settings}>
-          <div className="carousel-contante image1">
-            <div
-              className="carousel-contante1"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <h1 className="title-caro">Find product For Your Shop</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-              <button className="btn-caro">Shop NOW!</button>
+          <div className="carousel-contante">
+            <img src="carou2.webp" alt="img1" />
+            <div className="carousel-contante1">
+              <h1 className="title-caro">
+                Boutique Mirabelle Style : Vente et Location de Tenues de
+                Mariage
+              </h1>
+              <div className="text_container">
+                <div className="text">
+                  <p>Choisissez votre mode d'achat:</p>
+                  <select>
+                    <option>Achat direct</option>
+                    <option>Sur commande</option>
+                    <option>Location</option>
+                    <option>Par Facilté</option>
+                  </select>
+                </div>
+                <a href="#">
+                  <span>Commencer</span>
+                </a>
+              </div>
             </div>
           </div>
-          <div className="carousel-contante image2">
-            <div
-              className="carousel-contante1"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <h1 className="title-caro">Find product For Your Shop</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-              <button className="btn-caro">Shop NOW!</button>
+          <div className="carousel-contante">
+            <img src="carou-1.webp" alt="img1" />
+            <div className="carousel-contante1">
+              <h1 className="title-caro">
+                Boutique Mirabelle Style : Vente et Location de Tenues de
+                Mariage
+              </h1>
+              <div className="text_container">
+                <div className="text">
+                  <p>Choisissez votre mode d'achat:</p>
+                  <select>
+                    <option>Achat direct</option>
+                    <option>Sur commande</option>
+                    <option>Location</option>
+                    <option>Par Facilté</option>
+                  </select>
+                </div>
+                <a href="#">
+                  <span>Commencer</span>
+                </a>
+              </div>
             </div>
           </div>
         </Slider>
