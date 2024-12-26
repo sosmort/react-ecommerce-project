@@ -180,8 +180,12 @@ input {
   justify-content: center;
   align-items: center;
 }
-.icon__navbar:hover {
+.icon__navbar:hover,
+.icon__navbar:hover span {
   color: rgb(240, 168, 68);
+}
+.icon__navbar:hover .svg-overlay-text {
+  color: #fff;
 }
 .icon__navbar svg {
   /* font-size: 16px; */
@@ -413,6 +417,7 @@ input {
   display: flex;
 }
 .title-caro {
+  text-align: left;
   font-size: 30px;
   line-height: 45px;
   font-weight: 700;
@@ -664,6 +669,77 @@ span {
   line-height: 35px;
   max-width: 36rem;
 }
+/* background banner */
+.banner_background {
+  background: url(/back_banner.svg) center/cover no-repeat;
+  position: relative;
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 1.5rem;
+}
+.empty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.banner_background h1 {
+  font-size: 30px;
+  line-height: 36px;
+  color: white;
+  z-index: 1;
+}
+.banner_background p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  max-width: 42rem;
+  z-index: 1;
+}
+.promotion {
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 45rem;
+}
+.promotion .case {
+  margin-bottom: 1.5rem;
+}
+.promotion a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  padding: 18px;
+  background-color: #fff;
+  height: 190px;
+}
+.promotion img {
+  height: 30px;
+  width: 18px;
+}
+.promotion h1 {
+  color: #000;
+  font-size: 24px;
+  line-height: 32px;
+}
+.promotion p {
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 20rem;
+  white-space: normal;
+}
 /*media quuiry*/
 @media (min-width: 1024px) {
   .pub_container iframe {
@@ -769,10 +845,31 @@ span {
   .banner_text p {
     font-size: 14px;
   }
+  .promotion {
+    row-gap: 0.75rem;
+  }
+  .promotion h1,
+  .banner_background h1 {
+    font-size: 16px;
+  }
+  .banner_background p {
+    font-size: 14px;
+  }
+  .promotion a {
+    row-gap: 0.25rem;
+    height: 140px;
+  }
+  .promotion p {
+    font-size: 12px;
+    width: 20rem;
+  }
 }
 @media (max-width: 900px) {
   .carousel-contante img {
     width: 100%;
+    height: 100vh;
+  }
+  .banner_background {
     height: 100vh;
   }
 }
@@ -822,7 +919,34 @@ span {
     column-gap: 10px;
     row-gap: 20px;
   }
-  .image_container {
+  /* .image_container {
     height: 200px;
+  } */
+  .promotion {
+    flex-direction: column;
+    gap: 0;
+  }
+  .promotion a {
+    height: fit-content;
+  }
+  .promotion .case {
+    margin-bottom: 0;
+  }
+  .promotion > div {
+    justify-self: flex-end;
+  }
+
+  .promotion > .first_line > div,
+  .promotion > .second_line > div {
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .column1,
+  .column2 {
+    height: auto;
+  }
+  .column2 {
+    height: 90%;
   }
 }
