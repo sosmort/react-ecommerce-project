@@ -977,6 +977,7 @@ span {
   .footer_container {
     flex-direction: column;
     row-gap: 2rem;
+    padding: 2rem 1.25rem;
   }
   .footer_component h2 {
     position: relative;
