@@ -9,6 +9,7 @@ import PubVideo from "./PubVideo";
 import AllProducts from "./AllProducts";
 import Banner from "./Banner";
 import BackBanner from "./BannerBackground";
+import Footer from "./Footer";
 const products = [
   { id: 1, name: "blouza", price: "2,000 DZD", image: "cat1.jpeg" },
   { id: 2, name: "BONK DE BAIN", price: "350 DZD", image: "cat2.jpeg" },
@@ -54,6 +55,7 @@ function App() {
         bannerListe={[`banner1.svg`, `banner2.svg`, `banner3.svg`]}
       ></Banner>
       <BackBanner></BackBanner>
+      <Footer></Footer>
     </>
   );
 }
