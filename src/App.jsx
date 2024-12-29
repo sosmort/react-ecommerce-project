@@ -2,14 +2,14 @@ import { useState } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import "./App.css";
-import Header from "./Header";
-import Carousel from "./Carousel";
-import Category from "./Category";
-import PubVideo from "./PubVideo";
-import AllProducts from "./AllProducts";
-import Banner from "./Banner";
-import BackBanner from "./BannerBackground";
-import Footer from "./Footer";
+import Header from "./Component/Header";
+import Carousel from "./Component/Carousel";
+import Category from "./Component/Category";
+import PubVideo from "./Component/PubVideo";
+import AllProducts from "./Component/AllProducts";
+import Banner from "./Component/Banner";
+import BackBanner from "./Component/BannerBackground";
+import Footer from "./Component/Footer";
 const products = [
   { id: 1, name: "blouza", price: "2,000 DZD", image: "cat1.jpeg" },
   { id: 2, name: "BONK DE BAIN", price: "350 DZD", image: "cat2.jpeg" },

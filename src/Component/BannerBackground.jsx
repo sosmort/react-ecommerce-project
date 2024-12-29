@@ -1,4 +1,4 @@
-function Banner() {
+function BannerBackground() {
   return (
     <>
       <div className="banner_background">
@@ -50,4 +50,4 @@ function Banner() {
     </>
   );
 }
-export default Banner;
+export default BannerBackground;

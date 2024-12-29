@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 
-function SimpleSlider(props) {
+function Carousel(props) {
   const settings = {
     dots: true,
     infinite: true,
@@ -48,4 +48,4 @@ function SimpleSlider(props) {
   );
 }
 
-export default SimpleSlider;
+export default Carousel;
