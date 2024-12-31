@@ -9,11 +9,36 @@ export default function Header(props: any) {
   };
   return (
     <>
+      <div className="top_header">
+        <ul>
+          <li>
+            <img src="mail.svg" alt="mail-icon" />
+            <span>mirabellestyle@gmail.com</span>
+          </li>
+          <li>
+            <img src="phone.svg" alt="phone-icon" />
+            <span>0770172171</span>
+          </li>
+        </ul>
+        <div className="social_media_header">
+          <a href="#">
+            <img src="/facebook_icon.svg" alt="facebook" />
+          </a>
+          <a href="#">
+            <img src="/instagram_icon.svg" alt="facebook" />
+          </a>
+          <a href="#">
+            <img src="/tiktok_icon.svg" alt="facebook" />
+          </a>
+          <a href="#">
+            <img src="/snapchat_icon.svg" alt="facebook" />
+          </a>
+          <a href="#">
+            <img src="/youtube_icon.svg" alt="facebook" />
+          </a>
+        </div>
+      </div>
       <header className="navbar">
-        {/* <span id="showMenu">
-          <i className="fa fa-bars fa_bars" id="nav-toggle"></i>
-        </span> */}
-
         {isOpen ? (
           <div
             className={`mobile_navbar ${isOpen ? "active" : ""}`}
@@ -96,15 +121,26 @@ export default function Header(props: any) {
           </div>
         </div>
       </header>
-      {/* <ul>
-        {props.navlist.map((item) => (
-          <li>
-            <a href="#" onClick={() => props.onChangePage(item)}>
-              {item}
-            </a>
-          </li>
-        ))}
-      </ul> */}
+      <div className="social_media_fix">
+        <a href="#">
+          <img src="/facebook_icon.svg" alt="facebook" />
+        </a>
+        <a href="#">
+          <img src="/instagram_icon.svg" alt="facebook" />
+        </a>
+        <a href="#">
+          <img src="/tiktok_icon.svg" alt="facebook" />
+        </a>
+        <a href="#">
+          <img src="/snapchat_icon.svg" alt="facebook" />
+        </a>
+        <a href="#">
+          <img src="/youtube_icon.svg" alt="facebook" />
+        </a>
+        <a className="whatsapp" href="#">
+          <img src="/whatsapp.svg" alt="facebook" />
+        </a>
+      </div>
     </>
   );
 }
