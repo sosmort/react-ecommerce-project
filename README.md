@@ -166,8 +166,11 @@ npm run build
 
 This will create a `dist/` folder with the production-ready build.
 
-5. **Deploy the project**  
-   You can deploy the build manually to your desired platform. For example, after building, you can deploy the `dist/` folder to services like **Netlify** or **Vercel**.
+5. ## Deployment
+
+This project has been deployed on [Netlify](https://neon-caramel-b6bf2a.netlify.app/). You can access the live website through the following link:
+
+- [Live Website](https://neon-caramel-b6bf2a.netlify.app/)
 
 #### Acknowledgements
 
