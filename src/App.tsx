@@ -37,7 +37,7 @@ function App() {
     <>
       <Header
         navlist={["Accueil", "Magasin", "À propos", "Contact", "Commandes"]}
-        onChangePage={(page) => {
+        onChangePage={(page: any) => {
           console.log(page);
         }}
       ></Header>

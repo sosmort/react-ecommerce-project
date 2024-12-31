@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 
-function Carousel(props) {
+function Carousel(props: any) {
   const settings = {
     dots: true,
     infinite: true,
@@ -16,7 +16,7 @@ function Carousel(props) {
     <>
       <div className="carousel-home">
         <Slider {...settings}>
-          {props.imgList.map((item) => (
+          {props.imgList.map((item: any) => (
             <div className="carousel-contante">
               <img src={item} alt="img1" />
 

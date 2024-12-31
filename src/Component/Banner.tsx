@@ -1,4 +1,4 @@
-function banner({ bannerListe }) {
+function banner({ bannerListe }: { bannerListe: string[] }) {
   return (
     <>
       <div className="banner_container">

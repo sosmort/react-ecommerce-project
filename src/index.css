@@ -489,9 +489,8 @@ input {
   align-items: center;
   column-gap: 0.5rem;
 }
-.category_underline img {
-  height: 28px;
-  width: 28px;
+.category_underline svg {
+  width: 4rem;
 }
 .category_title h1 {
   line-height: 2rem;

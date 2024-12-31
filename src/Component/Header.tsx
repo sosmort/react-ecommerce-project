@@ -2,7 +2,7 @@ import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { useState } from "react";
 
-export default function Header(props) {
+export default function Header(props: any) {
   const [isOpen, setOpen] = useState(false);
   const ToggleSide = () => {
     setOpen(!isOpen);
@@ -63,7 +63,7 @@ export default function Header(props) {
 
         <div className="logo_nav">
           <div className="content-navbar">
-            {props.navlist.map((item) => (
+            {props.navlist.map((item: any) => (
               <a href="#" onClick={() => props.onChangePage(item)}>
                 {item}
               </a>
