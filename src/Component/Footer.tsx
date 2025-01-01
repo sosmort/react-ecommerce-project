@@ -42,10 +42,26 @@ function footer() {
         <div className="footer_component">
           <h2 onClick={toggleOffers}>Offres</h2>
           <ul className={isOffersOpen ? "offer-open" : "offer-closed"}>
-            <a href="#">Achat direct</a>
-            <a href="#">Sur commande</a>
-            <a href="#">Location</a>
-            <a href="#">Par facilité</a>
+            <li>
+              <span>
+                <a href="#">Achat direct</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href="#">Sur commande</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href="#">Location</a>
+              </span>
+            </li>
+            <li>
+              <span>
+                <a href="#">Par facilité</a>
+              </span>
+            </li>
           </ul>
         </div>
         <div className="footer_component">
