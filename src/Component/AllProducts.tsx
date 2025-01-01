@@ -20,6 +20,7 @@ function AllProducts(props: any) {
             </svg>
             <span></span>
           </div>
+          <h6>Découvrez nos meilleures recommandations pour vous</h6>
         </div>
         <div className="product_container">
           {props.products.map((item: any) => (
@@ -28,6 +29,9 @@ function AllProducts(props: any) {
               <div className="prod_info">
                 <h3>{item.name}</h3>
                 <span>{item.price}</span>
+                {item.oldPrice > 0 ? (
+                  <span className="old_price">{item.oldPrice + " DZD"}</span>
+                ) : null}
                 <button>
                   <svg
                     width="28"
