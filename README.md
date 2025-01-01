@@ -168,9 +168,9 @@ This will create a `dist/` folder with the production-ready build.
 
 5. ## Deployment
 
-This project has been deployed on [Netlify](https://neon-caramel-b6bf2a.netlify.app/). You can access the live website through the following link:
+This project has been deployed on [Netlify](https://graceful-queijadas-e436d2.netlify.app/). You can access the live website through the following link:
 
-- [Live Website](https://neon-caramel-b6bf2a.netlify.app/)
+- [Live Website](https://graceful-queijadas-e436d2.netlify.app/)
 
 #### Acknowledgements
 
